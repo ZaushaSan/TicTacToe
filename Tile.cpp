@@ -37,14 +37,14 @@ void Tile::place(int row, int col){
 void Tile::drawCross(int row, int col){
     int fieldSize = 160;
 
-    cross.loadFromFile("C:/Users/irina/Desktop/Projects/TicTacToe/src/cross.png");
+    cross.loadFromFile("src/cross.png");
     cross.renderTextures(fieldSize * col, fieldSize * row);
 }
 
 void Tile::drawCircle(int row, int col){
     int fieldSize = 160;
     
-    circle.loadFromFile("C:/Users/irina/Desktop/Projects/TicTacToe/src/circle.png");
+    circle.loadFromFile("src/circle.png");
     circle.renderTextures(fieldSize * col, fieldSize * row);
 }
 
