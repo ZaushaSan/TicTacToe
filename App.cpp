@@ -36,11 +36,11 @@ bool App::init(){
         printf("404 %s\t", TTF_GetError());
         success = false;
     }
-    grid.loadFromFile("C:/Users/irina/Desktop/Projects/TicTacToe/src/grid.png");
-    win.loadFromFile("C:/Users/irina/Desktop/Projects/TicTacToe/src/win.png");
+    grid.loadFromFile("src/grid.png");
+    win.loadFromFile("src/win.png");
 
     SDL_Color textColor = {255, 255, 255};
-    gFont = TTF_OpenFont("C:/Users/irina/Desktop/Projects/TicTacToe/src/IpanemaSecco-463W.ttf", 60);
+    gFont = TTF_OpenFont("src/IpanemaSecco-463W.ttf", 60);
     draw.loadFromRenderedText("DRAW", textColor);
     someoneWins.loadFromRenderedText("WIN", textColor);
     return success;
